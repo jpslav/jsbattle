@@ -15,7 +15,7 @@ function createScriptWithName(name) {
   const namespace = 'scriptMap';
   let storedScripts = localStorage.getItem(namespace);
   let scriptMap = storedScripts ? JSON.parse(storedScripts) : {};
-  if(Object.keys(scriptMap).length >= 7) {
+  if(Object.keys(scriptMap).length >= 20) {
     throw new Error('Script limit exceeded');
   }
   if(!isNameAllowed(name)) {

@@ -19,7 +19,7 @@ module.exports = async function(ctx) {
     namespace: 'user',
     ownerId: userId
   }});
-  if(count >= 7) {
+  if(count >= 20) {
     throw new ValidationError('Script limit exceeded', 401);
   }
 

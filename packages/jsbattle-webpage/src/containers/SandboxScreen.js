@@ -211,7 +211,7 @@ export class SandboxScreen extends React.Component {
             code={this.props.script.code}
             name={this.props.script.scriptName}
             rngSeed={this.state.rngSeed}
-            timeLimit={0}
+            timeLimit={30000}
             teamMode={teamMode}
             count={count}
             aiDefList={this.aiDefList}

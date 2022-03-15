@@ -64,7 +64,7 @@ class LiveCodeSandboxSettingsTab extends React.Component {
                 </div>
                 <div className="form-group">
                   <label htmlFor="seed"><i className="fas fa-seedling"></i> RNG Seed</label>
-                  <input type="text" className="form-control" id="seed" value={this.props.rngSeed} disabled />
+                  <input type="text" className="form-control" id="seed" value={this.props.rngSeed} />
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" id="lock" checked={this.props.isRngLocked} onChange={(e) => this.props.onRngLock(e.target.checked)} />
                     <label className="form-check-label" htmlFor="lock">
